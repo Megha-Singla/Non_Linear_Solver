@@ -1,0 +1,2 @@
+def diagnostics():
+    pass

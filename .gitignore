@@ -1,0 +1,19 @@
+# Python cache and compiled files
+pycache/
+*.pyc
+
+
+# Test and tool caches
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Package build output
+*.egg-info/
+build/
+dist/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
