@@ -44,8 +44,11 @@ def f(x):
 def g(x):
     return x**2 - 2
 
-f1=Bisection(g)
-print(f1.solve(0,3))
+
+
+if __name__=="main":
+    f1=Bisection(g)
+    print(f1.solve(0,3))
 
 
 
