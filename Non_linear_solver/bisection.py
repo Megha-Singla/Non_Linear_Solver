@@ -1,4 +1,2 @@
 def bisection():
     pass
-
-# testing
