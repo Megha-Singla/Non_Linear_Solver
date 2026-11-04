@@ -14,7 +14,7 @@ class TestNewton(unittest.TestCase):
     def test_zero_derivative(self):            #this function is checking if the derivative is zero or not
         r = Newton(lambda x: x ** 2 - 1, lambda x: 2 * x).solve(0.0)
         self.assertFalse(r["converged"])         # it is showing that convergence should come false
-        self.assertIn("Derivative near zero", r["message"])  # it is checking if the message that it is showing is telling that the derivative is zero or not
+        self.assertIn("Derivative is close to zero and can be zero, it will cause the denominator to be zero, so change it", r["message"])  # it is checking if the message that it is showing is telling that the derivative is zero or not
 
     def test_max_iterations(self):              #this function is testing the maximum iteration that is if it shows that max iteration is reached
         r = Newton(lambda x: x ** 3 - 2 * x + 2, lambda x: 3 * x ** 2 - 2, max_iter=10).solve(0.0)
